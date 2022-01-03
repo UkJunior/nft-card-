@@ -1,0 +1,173 @@
+* {
+  /* margin: 0; */
+}
+
+body {
+  background: hsl(217, 54%, 11%);
+  box-sizing: border-box;
+  /* font-size: 1em; */
+  font-family: "Outfit" Verdana, Geneva, Tahoma, sans-serif;
+  color: hsl(215, 51%, 70%);
+}
+P {
+  font-size: 1em;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 60%;
+  margin-top: 3em;
+  min-height: 200px;
+}
+.page-wrapper {
+  /* border: 1px solid red; */
+  margin: auto;
+  padding: 1.5em 1.5em;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1em;
+}
+.main-image {
+  border-radius: 0.5em;
+}
+.image-equilibrium {
+  /* border: 1px solid red; */
+  position: relative;
+}
+.image-equilibrium img {
+  width: 100%;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 50%;
+  /* background-color: hsl(178, 100%, 50%); */
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.image-equilibrium:hover .main-image {
+  opacity: 0.9;
+}
+.image-equilibrium:hover .middle {
+  opacity: 1;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  /* width: 100%; */
+  padding: 9em 0;
+  border-radius: 0.5em;
+}
+.eye {
+  color: white;
+  opacity: 1;
+}
+.nft-no {
+  /* border: 1px solid red; */
+  color: hsl(0, 0%, 100%);
+}
+.nft-no:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.despt {
+  /* border: 1px solid red; */
+}
+.price {
+  /* border: 1px solid red; */
+  display: flex;
+  /* gap: */
+  justify-content: space-between;
+  align-items: center;
+}
+.eth-price {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+  gap: 0.5em;
+}
+.days {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.line {
+  height: 0.05em;
+  background: hsl(215, 32%, 27%);
+  border-width: 0;
+}
+.owner-section {
+  /* border: 1px solid red; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 1em;
+  padding-top: 0.2em;
+}
+.owner-section img {
+  width: 15%;
+  border: 1px groove white;
+  border-radius: 50%;
+}
+span {
+  color: hsl(0, 0%, 100%);
+  padding-left: 0.1em;
+}
+span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 1441px) {
+  .container {
+    /* border: 1px solid red; */
+    max-width: 20%;
+    /* height: 100vh; */
+    padding: 5em 2em;
+  }
+
+  .image-equilibrium:hover .middle {
+    padding: 5.83em 0;
+    border-radius: 0.5em;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    /* border: 1px solid red; */
+    margin-top: 5em;
+    /* margin-bottom: 3em; */
+    max-height: 40em;
+    max-width: 25%;
+    height: 100vh;
+  }
+  .image-equilibrium:hover .middle {
+    padding: 6.8em 0;
+    border-radius: 0.5em;
+  }
+}
+
+@media (max-width: 440px) {
+  .image-equilibrium:hover .middle {
+    padding: 4.7em 0;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    max-width: 100%;
+  }
+  .image-equilibrium:hover .middle {
+    padding: 7em 0;
+    border-radius: 0.5em;
+  }
+}
